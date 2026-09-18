@@ -13,3 +13,4 @@ nav button{border:0;background:none;color:inherit;text-transform:uppercase;lette
 @media(min-width:640px) and (max-width:767px){.portrait{width:360px}.hero-bottom p{max-width:180px}.hero-bottom .contact-button{padding:14px 30px}}
 @media(min-width:768px) and (max-width:1023px){.portrait{width:440px}}
 .portrait{pointer-events:none}
+.project-video{width:100%;border-radius:40px;overflow:hidden;background:#000}.project-video video{display:block;width:100%;aspect-ratio:16/9;max-height:60vh;object-fit:contain;background:#000}.project-video video:focus-visible{outline:2px solid #cf84ee;outline-offset:-3px}@media(max-width:639px){.project-video{border-radius:20px}.project-video video{max-height:none}}
