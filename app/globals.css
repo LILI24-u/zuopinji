@@ -18,3 +18,42 @@ nav button{border:0;background:none;color:inherit;text-transform:uppercase;lette
 .project-subtitle{display:block;margin-top:7px;font-size:.72em;font-weight:500;line-height:1.65;letter-spacing:.015em;color:#bac7d0;text-transform:none}
 .project-video-portrait video{aspect-ratio:auto;height:60vh;max-height:720px;object-fit:contain}@media(max-width:639px){.project-video-portrait video{height:60svh;max-height:640px}}
 .marquee-row video{width:420px;height:270px;object-fit:cover;border-radius:16px;background:#151515;flex-shrink:0}
+.zeze-slice{position:relative;overflow:hidden;background:#e9e2d7;width:100%;isolation:isolate}.zeze-slice-inner{position:absolute;inset:0;transition:transform .35s ease}.zeze-slice-inner img{display:block;width:100%;height:auto;max-width:none;transform:translateY(var(--slice-shift));border-radius:0}.zeze-slice:hover .zeze-slice-inner{transform:scale(1.02)}.zeze-card-collage{display:grid;grid-template-columns:2fr 3fr;gap:20px;max-height:500px;overflow:hidden;border-radius:36px}.zeze-card-left{display:grid;gap:20px;min-height:0}.zeze-card-collage .zeze-slice{border-radius:30px;aspect-ratio:auto!important;height:100%;min-height:0}.zeze-card-collage>.zeze-slice{height:500px}.zeze-card-left>.zeze-slice{height:240px}.zeze-case-button:hover{background:#ffd638;color:#0c0c0c;border-color:#ffd638}.zeze-case-button{transition:background .3s,color .3s}.project-card#zeze-case{scroll-margin-top:40px}@media(max-width:639px){.zeze-card-collage{gap:10px;max-height:320px;border-radius:20px}.zeze-card-left{gap:10px}.zeze-card-collage .zeze-slice{border-radius:16px}.zeze-card-collage>.zeze-slice{height:320px}.zeze-card-left>.zeze-slice{height:155px}.zeze-case-button{grid-column:2;justify-self:start;margin-left:0}}
+/* Desktop collage shows the product visuals rather than oversized cropped copy. */
+@media(min-width:768px){.zeze-card-collage .zeze-slice{container-type:size}.zeze-card-collage .zeze-slice-inner{width:calc(100cqh * 675 / var(--slice-height));left:50%;translate:-50% 0}.zeze-card-collage .zeze-slice-inner img{height:auto}}
+
+/* Personal profile */
+.about-profile{padding-top:130px;padding-bottom:130px;scroll-margin-top:32px;color:#d6e0e5}
+.profile-heading{border-bottom:1px solid #44494d;padding-bottom:30px;margin-bottom:56px}
+.about-profile .profile-heading h2{font-size:clamp(76px,12vw,180px);font-weight:900;line-height:.88;letter-spacing:-.065em;text-align:left;margin:0 0 24px}
+.profile-heading>p{font-size:12px;letter-spacing:.26em;color:#9b9fa5;margin:0}
+.profile-layout{display:grid;grid-template-columns:35fr 65fr;gap:clamp(32px,5vw,80px);align-items:start}
+.profile-photo-column{position:sticky;top:36px;min-width:0}
+.profile-photo{aspect-ratio:3/4;overflow:hidden;border:1px solid #74787d;border-radius:32px}
+.profile-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.profile-photo:hover img{transform:scale(1.02)}
+.profile-photo-caption{display:flex;flex-wrap:wrap;gap:10px 20px;justify-content:space-between;font-size:12px;color:#b0b5b9;margin:18px 0 0}
+.profile-photo-caption span{font-size:9px;letter-spacing:.1em;color:#878d93}
+.profile-information{min-width:0;text-align:left}
+.profile-role{font-size:12px;letter-spacing:.14em;color:#aba8d0;margin:0 0 16px}
+.profile-intro h3{font-size:clamp(36px,4vw,60px);font-weight:650;letter-spacing:.025em;line-height:1.2;margin:0 0 24px}
+.profile-bio{font-size:15px;line-height:1.9;color:#b9bec3;max-width:600px;margin:0 0 28px}
+.profile-contacts{display:flex;gap:16px 32px;flex-wrap:wrap;padding-bottom:32px}
+.profile-contacts a{display:flex;align-items:center;gap:12px;font-size:14px;color:#c6ccd2;text-decoration:none;transition:color .3s}
+.profile-contacts a span{font-size:10px;letter-spacing:.12em;color:#8c929a}
+.profile-contacts a:hover{color:#fff}
+.profile-contacts a:focus-visible{outline:1px solid #aba8d0;outline-offset:6px}
+.profile-block{padding:26px 0;border-top:1px solid #3a3e42}
+.profile-block h4{font-size:11px;font-weight:500;letter-spacing:.2em;color:#90979f;margin:0 0 18px}
+.profile-primary{font-size:17px;font-weight:550;line-height:1.6;margin:0}
+.profile-secondary{font-size:14px;color:#aeb4bb;line-height:1.7;margin:6px 0 0}
+.profile-job-heading{display:flex;justify-content:space-between;align-items:baseline;gap:10px 20px;flex-wrap:wrap}
+.profile-date{font-size:11px;letter-spacing:.025em;color:#969da5;white-space:nowrap;margin:0}
+.profile-experience{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+.profile-experience li{position:relative;padding-left:16px;color:#b8bec5;font-size:14px;line-height:1.85}
+.profile-experience li:before{content:'';position:absolute;left:0;top:.8em;width:4px;height:4px;background:#85839b}
+.profile-text-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));list-style:none;padding:0;margin:0;gap:15px 18px;font-size:13px;color:#ccd2d7;line-height:1.5}
+.profile-tools .profile-text-grid{grid-template-columns:repeat(4,minmax(0,1fr));font-size:12px;color:#adb5bd}
+@media(max-width:1000px){.profile-layout{gap:32px}.profile-text-grid,.profile-tools .profile-text-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:767px){.about-profile{padding-top:80px;padding-bottom:80px}.profile-heading{margin-bottom:32px;padding-bottom:24px}.profile-layout{grid-template-columns:1fr;gap:36px}.profile-photo-column{position:static;max-width:440px;width:100%}.profile-photo{border-radius:26px}.profile-role{font-size:11px}.profile-intro h3{font-size:40px}.profile-contacts{flex-direction:column;gap:17px}.profile-block{padding:25px 0}.profile-primary{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.profile-photo img,.profile-contacts a{transition:none}.profile-photo:hover img{transform:none}}
