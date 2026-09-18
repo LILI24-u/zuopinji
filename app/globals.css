@@ -79,3 +79,17 @@ nav button{border:0;background:none;color:inherit;text-transform:uppercase;lette
 @media(max-width:767px){.portfolio-cover{padding:0 24px;min-height:840px;height:100svh;max-height:none}.cover-nav{font-size:11px;letter-spacing:.09em;gap:12px;padding:26px 0}.cover-editorial{padding-top:38px}.cover-eyebrow{font-size:11px;letter-spacing:.14em;margin-bottom:26px}.cover-editorial h1{font-size:16vw}.cover-editorial h1 span+span{margin-top:8px}.cover-video{width:110%;right:-26%;top:270px;bottom:130px;mask-image:linear-gradient(90deg,transparent,#000 24%,#000 84%,transparent)}.cover-description{margin-top:330px;max-width:290px}.cover-description>p{font-size:15px;line-height:1.5}.cover-description small{margin-top:14px;font-size:11px}.cover-footer{left:24px;right:24px;bottom:20px;font-size:10px}.cover-footer button{font-size:10px}.resume-details{gap:22px}.resume-end{min-height:580px}}
 .cover-video{mask-image:linear-gradient(90deg,transparent,#000 18%,#000 85%,transparent),linear-gradient(0deg,transparent,#000 18%,#000 90%,transparent);mask-composite:intersect}
 @media(max-width:767px){.cover-video{top:260px;bottom:auto;height:340px}.cover-description{margin-top:360px}}
+
+/* Editorial project index */
+.contents-section{background:#fff;color:#101010;border-radius:60px 60px 0 0;padding-top:128px;padding-bottom:170px}
+.contents-section h2{font-size:clamp(64px,12vw,172px);margin:0 0 110px;font-weight:900;letter-spacing:-.055em;line-height:1}
+.contents-list{list-style:none;padding:0;margin:0 auto;max-width:1440px}
+.contents-row{display:grid;grid-template-columns:20fr 60fr 12fr;column-gap:4%;align-items:start;padding:62px 0;border-bottom:1px solid #d6d6d6;transition:border-color .28s;scroll-margin-top:30px}
+.contents-number{font-size:clamp(90px,10.5vw,150px);line-height:.88;letter-spacing:-.075em;font-weight:900;color:#0c0c0c;transition:opacity .28s}
+.contents-copy{min-width:0}.contents-category{font-size:13px;font-weight:600;letter-spacing:.1em;line-height:1.5;margin:0 0 18px;color:#292929}
+.contents-copy h3{font-size:clamp(24px,2.4vw,36px);font-weight:550;line-height:1.5;letter-spacing:0;color:#383838;margin:0 0 20px;transition:color .28s}.contents-copy h3 span{display:block}
+.contents-description{font-size:16px;font-weight:350;line-height:1.85;color:#747474;margin:0;max-width:800px}
+.contents-row:hover,.contents-row:focus-visible{border-color:#737373}.contents-row:hover h3,.contents-row:focus-visible h3{color:#000}.contents-row:hover .contents-number{opacity:.65}.contents-row:focus-visible{outline:2px solid #333;outline-offset:8px}
+.project-track[id]{scroll-margin-top:96px}
+@media(max-width:1000px) and (min-width:768px){.contents-row{grid-template-columns:20fr 72fr;column-gap:8%}.contents-section h2{margin-bottom:80px}}
+@media(max-width:767px){.contents-section{padding-top:80px;padding-bottom:130px;border-radius:40px 40px 0 0}.contents-section h2{font-size:13.2vw;margin-bottom:45px}.contents-row{display:flex;flex-direction:column;gap:28px;padding:40px 0}.contents-number{font-size:88px}.contents-category{font-size:12px;letter-spacing:.07em;margin-bottom:14px}.contents-copy h3{font-size:23px;margin-bottom:16px}.contents-description{font-size:15px;line-height:1.85}.project-track[id]{scroll-margin-top:24px}}
