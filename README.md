@@ -25,3 +25,5 @@ pnpm build
 使用 React、TypeScript、Tailwind CSS、Framer Motion、Lucide React。预览和托管基于 Vinext / Vite；沿用托管模板的 React 19 和 Tailwind 4，而非提示词中的 React 18 / Tailwind 3。页面为响应式单页，无数据库和表单后端。外部图片和 Google Fonts 需要网络连接。
 
 联系邮箱和三个项目实际网址尚未提供，请在正式用于个人展示前补齐。
+
+# zuopinji
