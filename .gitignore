@@ -18,6 +18,10 @@
 /.vinext/
 /out/
 
+# next.js 16 writes these agent rule files during dev/build
+/AGENTS.md
+/CLAUDE.md
+
 # misc
 .DS_Store
 *.pem

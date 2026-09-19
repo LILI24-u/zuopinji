@@ -1,0 +1,15 @@
+# Netlify build configuration.
+#
+# This project is scaffolded with `vinext` (a Vite-based Next.js-compatible
+# framework) which produces a Cloudflare Workers bundle in `dist/`. Netlify
+# deploys the same `app/` code through Next.js itself, so the build here runs
+# `next build` and hands the standard `.next` output to @netlify/plugin-nextjs.
+#
+# `pnpm run dev` / `pnpm run build` are left on vinext for local work.
+
+[build]
+  command = "pnpm run build:netlify"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
