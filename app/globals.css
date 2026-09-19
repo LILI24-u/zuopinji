@@ -93,3 +93,13 @@ nav button{border:0;background:none;color:inherit;text-transform:uppercase;lette
 .project-track[id]{scroll-margin-top:96px}
 @media(max-width:1000px) and (min-width:768px){.contents-row{grid-template-columns:20fr 72fr;column-gap:8%}.contents-section h2{margin-bottom:80px}}
 @media(max-width:767px){.contents-section{padding-top:80px;padding-bottom:130px;border-radius:40px 40px 0 0}.contents-section h2{font-size:13.2vw;margin-bottom:45px}.contents-row{display:flex;flex-direction:column;gap:28px;padding:40px 0}.contents-number{font-size:88px}.contents-category{font-size:12px;letter-spacing:.07em;margin-bottom:14px}.contents-copy h3{font-size:23px;margin-bottom:16px}.contents-description{font-size:15px;line-height:1.85}.project-track[id]{scroll-margin-top:24px}}
+
+/* Unmodified landscape video, composed entirely in CSS */
+.cover-video{inset:0;width:100%;height:100%;mask-image:linear-gradient(90deg,transparent 44%,#000 59%,#000 96%,transparent);mask-composite:add;mix-blend-mode:screen}
+.cover-video video,.cover-video img{position:absolute;top:-5%;left:74%;width:auto;height:125%;max-width:none;aspect-ratio:16/9;object-fit:cover;transform:translateX(-58%)}
+.cover-video:after{background:linear-gradient(0deg,#0d0f12 0%,transparent 14%),linear-gradient(90deg,rgba(7,9,12,.85) 0%,rgba(7,9,12,.55) 32%,rgba(7,9,12,.08) 52%,transparent 65%)}
+.cover-editorial h1{font-size:clamp(88px,11.2vw,205px)}
+.cover-footer .cover-work-pill{display:inline-flex;gap:25px;align-items:center;padding:7px 7px 7px 20px;border-radius:999px;background:linear-gradient(180deg,#66686a,#36393c);box-shadow:inset 0 1px 0 #ffffff15;font-size:11px;letter-spacing:.06em;color:#f2f3f4;transition:background .25s,filter .25s}
+.cover-footer .cover-work-pill span{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#f3f3f3;color:#555;font-family:Arial,sans-serif;font-size:21px;line-height:1;box-shadow:0 1px 5px #0003}.cover-footer .cover-work-pill:hover{filter:brightness(1.15)}
+@media(max-width:767px){.cover-editorial h1{font-size:16vw}.cover-video{top:260px;bottom:auto;height:340px;left:0;right:0;width:100%;mask-image:linear-gradient(90deg,transparent,#000 24%,#000 94%,transparent)}.cover-video video,.cover-video img{top:-5%;left:68%;height:125%;width:auto;transform:translateX(-58%)}.cover-video:after{background:linear-gradient(0deg,#0d0f12,transparent 18%)}.cover-footer .cover-work-pill{font-size:10px;gap:18px;padding-left:16px}}
+@media(min-width:768px){.cover-video video,.cover-video img{left:78%}}
