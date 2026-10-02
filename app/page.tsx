@@ -8,7 +8,7 @@ import {AboutProfile} from '@/components/about-profile';
 import {ZezeCollage} from '@/components/zeze-artwork';
 import {ProjectContents} from '@/components/project-contents';
 import {portfolio} from '@/lib/portfolio';
-function FadeIn({children,delay=0,x=0,y=30,className=''}:{children:ReactNode;delay?:number;x?:number;y?:number;className?:string}){const reduced=useReducedMotion();return <motion.div className={className} initial={reduced?false:{opacity:0,x,y}} whileInView={{opacity:1,x:0,y:0}} viewport={{once:true,margin:'50px',amount:0}} transition={{delay,duration:.7,ease:[.25,.1,.25,1]}}>{children}</motion.div>}
+function FadeIn({children,delay=0,x=0,y=30,className=''}:{children:ReactNode;delay?:number;x?:number;y?:number;className?:string}){const reduced=useReducedMotion();return <motion.div className={className} initial={false} whileInView={{opacity:1,x:0,y:0}} viewport={{once:true,margin:'50px',amount:0}} transition={{delay,duration:.7,ease:[.25,.1,.25,1]}}>{children}</motion.div>}
 function MarqueeSection(){
  const ref=useRef<HTMLElement>(null);
  const rows=useRef<(HTMLDivElement|null)[]>([]);

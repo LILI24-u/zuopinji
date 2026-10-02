@@ -8,7 +8,7 @@ const tools = [{name:'Photoshop',icon:'photoshop'},{name:'Premiere Pro',icon:'pr
 
 function Reveal({children, className = ''}: {children: ReactNode; className?: string}) {
   const reduced = useReducedMotion();
-  return <motion.div className={className} initial={reduced ? false : {opacity: 0, y: 16}} whileInView={{opacity: 1, y: 0}} viewport={{once: true, amount: .08}} transition={{duration: .4}}>{children}</motion.div>;
+  return <motion.div className={className} initial={false} whileInView={{opacity: 1, y: 0}} viewport={{once: true, amount: .08}} transition={{duration: .4}}>{children}</motion.div>;
 }
 
 export function AboutProfile() {
